@@ -1,0 +1,90 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    max-width: 700px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.calendar div {
+    padding: 20px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.calendar div:hover {
+    background-color: #686868;
+    color: white;
+    transform: scale(1.1);
+}
+
+.calendar .highlight {
+    background-color: #27ae60;
+    color: white;
+    font-weight: bold;
+}
+
+.calendar .highlight:hover {
+    background-color: #2ecc71;
+}
+
+.calendar .selected {
+    background-color: #e74c3c;
+    color: white;
+    font-weight: bold;
+}
+
+.calendar .empty {
+    background-color: transparent;
+}
+
+.calendar .week-day {
+    font-weight: bold;
+    background-color: #34495e;
+    color: white;
+}
+
+a.back-button {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+a.back-button:hover {
+    background-color: #3498db;
+}
+
+li.goal {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+li.achieved {
+    color: #27ae60;
+    font-weight: bold;
+}
